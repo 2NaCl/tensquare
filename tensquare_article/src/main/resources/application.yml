@@ -1,0 +1,22 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: tensquare-article
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tensquare_base?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    username: root
+    password:
+  jpa:
+    database: mysql
+    show-sql: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka/
+  instance:
+    prefer-ip-address: true

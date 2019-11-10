@@ -1,0 +1,5 @@
+server:
+  port: 8099
+spring:
+  rabbitmq:
+    host: 127.0.0.1
